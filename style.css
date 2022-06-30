@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --txt-color: #353535;
+    --box-shadow: 0.2rem 0.2rem 0.9rem 0rem rgba(99, 99, 99, 0.2);
+    --txt-shadow: 0.2rem 0.2rem 0.9rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme {
+    --bg-color: rgb(53, 53, 53);
+    ;
+    --txt-color: rgb(255, 255, 255);
+    --box-shadow: 0.2rem 0.2rem 0.9rem 0.2rem rgba(0, 0, 0, 0.2);
+    --txt-shadow: 0.2rem 0.2rem 0.9rem 0rem rgba(99, 99, 99, 0.2);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1,
+.firsth2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* header section starts here */
+.headerSection {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: var(--bg-color);
+}
+
+.logo p {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--txt-color);
+    text-shadow: var(--txt-shadow);
+    letter-spacing: 0.4rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+nav img {
+    width: 3rem;
+}
+
+.searchArea {
+    position: relative;
+    right: 3rem;
+    width: 15rem;
+    height: 4.5rem;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.5rem;
+    box-shadow: var(--box-shadow) inset;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.searchArea input {
+    width: 9rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--txt-color);
+}
+
+.searchArea input::placeholder {
+    color: var(--txt-color);
+}
+
+.searchArea i {
+    font-size: 1.2rem;
+    color: var(--txt-color);
+}
+
+.searchArea input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--txt-color);
+    letter-spacing: 0.2rem;
+}
+
+/* hero section starts here */
+.hero {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bg-color);
+}
+
+.banner {
+    width: 35vw;
+}
+
+.asideSection h1, h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: var(--txt-color);
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.asideSection span {
+    font-size: 5rem;
+    color: #7a72ff;
+}
+
+.asideSection h1 {
+    letter-spacing: 2.3rem;
+}
+
+.asideSection h2 {
+    letter-spacing: 0.5rem;
+}
+
+.btn {
+    width: 12rem;
+    height: 4rem;
+    background-color: #EB0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+}
+
+.btn:hover {
+    background-color: #6e64ff;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.socialMedia {
+    position: fixed;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-color);
+    ;
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+    ;
+    z-index: 1;
+}
+
+.socialMedia a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1.2rem;
+}
+
+.socialMedia a:first-child {
+    margin-top: 2rem;
+}
+
+.socialMedia a:last-child {
+    margin-bottom: 2rem;
+}
+
+.socialMedia a i {
+    color: rgb(100, 100, 100);
+    font-size: 1.8rem;
+}
+
+.socialMedia a:hover .fa-facebook {
+    color: #0051ff;
+}
+
+.socialMedia a:hover .fa-twitter {
+    color: #00b7ff;
+}
+
+.socialMedia a:hover .fa-instagram {
+    color: #008cff;
+}
+
+.socialMedia a:hover .fa-github {
+    color: #171515;
+}
+
+/* product section stars here */
+.productSection {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 3rem;
+}
+
+.productSection h2 {
+    margin: 3rem auto;
+    font-size: 4rem;
+    color: var(--txt-color);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.productSection span {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #645CFF;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.productBox {
+    width: 25rem;
+    height: 33rem;
+    margin: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    background-color: var(--bg-color);
+}
+
+.productBox img {
+    height: 19rem;
+    width: 22rem;
+    border-radius: 0.8rem;
+}
+
+.productBox p {
+    margin-top: 1rem;
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.productBox span {
+    font-size: 1.2rem;
+    color: var(--txt-color);
+}
+
+
+.BuyBtn {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    color: #FFFFFF;
+    border-radius: 3rem;
+    visibility: hidden;
+    font-size: 1.5rem;
+}
+
+.BuyBtn:hover {
+    transform: scale(1.01);
+}
+
+.productBox:hover .BuyBtn {
+    visibility: visible;
+    animation: fade 0.3s;
+
+}
+
+.productBox:hover {
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.productBox:hover a:last-child {
+    color: #fff;
+}
+
+.shopMore {
+    position: relative;
+    bottom: 1.5rem;
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--txt-color);
+    box-sizing: border-box;
+}
+
+/* about section starts here */
+.aboutSection {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: var(--bg-color);
+}
+
+.aboutBox {
+    width: 40%;
+}
+
+.imgBox {
+    width: 40%;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutBox h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--txt-color);
+}
+
+.aboutBox h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--txt-color);
+}
+
+.aboutBox p {
+    font-size: 1.5rem;
+    color: #757575;
+}
+
+.aboutSection span {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #645CFF;
+}
+
+/* notification section starts here */
+.notification {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.notification .subscribe {
+    font-size: 2rem;
+    color: var(--txt-color);
+}
+
+.notificationArea {
+    width: 50rem;
+    height: 6rem;
+    background: var(--box-shadow);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 3rem;
+}
+
+.notificationArea input {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--txt-color);
+}
+
+.notificationArea input::placeholder {
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+}
+
+.notificationButton {
+    width: 12rem;
+    height: 4rem;
+    background-color: #202020;
+    border-radius: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.notificationButton:hover {
+    background-color: #6b60ec;
+    transition: all ease 0.5s;
+}
+
+/* footer section starts here */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+
+}
+
+footer p {
+    font-size: 1rem;
+    color: #f2f2f2;
+}
+
+footer a img {
+    width: 0.5rem;
+    position: relative;
+    right: 52rem;
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .headerSection {
+        height: 10vmax;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: 90vmax;
+    }
+
+    .banner {
+        width: 45vmax;
+    }
+
+    .aboutSection {
+        flex-direction: column;
+    }
+
+    .imgBox {
+        margin-top: 3rem;
+    }
+
+    .productBox {
+        background-color: var(--bg-color);
+        box-shadow: var(--box-shadow);
+
+    }
+
+    .BuyBtn {
+        visibility: visible;
+    }
+
+    .aboutBox {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .socialMedia {
+        left: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .socialMedia {
+        left: 0rem;
+    }
+
+    .productSection h2 {
+        font-size: 3.5rem;
+    }
+
+    .productSection h2>span {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .notificationArea {
+        width: 40rem;
+
+    }
+
+    .productSection h2 {
+        font-size: 3rem;
+    }
+
+    .productSection h2>span {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .productSection h2 {
+        font-size: 2.5rem;
+    }
+
+    .productSection h2>span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .productSection h2 {
+        font-size: 2rem;
+    }
+
+    .productSection h2>span {
+        font-size: 2rem;
+    }
+}
