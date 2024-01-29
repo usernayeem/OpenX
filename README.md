@@ -6,17 +6,17 @@ SEO friendly responsive e-commerce website.
 
 ## Authors
 
-- [@md5nayeem](https://www.github.com/md5nayeem)
+- [Md Nayeem](https://www.github.com/usernayeem)
 
 
 ## Demo
 
-https://md5nayeem.github.io/OpenX/
+https://usernayeem.github.io/OpenX/
 
 
 ## Feedback
 
-If you have any feedback, please reach out to me at https://www.linkedin.com/in/md5nayeem/
+If you have any feedback, please reach out to me at https://www.linkedin.com/in/usernayeem/
 
 
 ## Focusing on
